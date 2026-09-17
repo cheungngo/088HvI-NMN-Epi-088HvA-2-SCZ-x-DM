@@ -1,0 +1,210 @@
+====================================================================================
+  088HvI  STAGE 4  CLAIM-ROBUSTNESS  —  DETAILED SUMMARY
+  Pipeline  : /content/088HvI_results
+  Generated : 2026-09-17 11:02:34
+  Diseases  : dm_cvs (T2D/CVD)  vs  scz (SCZ)
+  Thresholds: |Z|>1.96 sig, |Z|>8.0 extreme, DIV_STABLE>=0.7
+  Kept sets : 109 | gene-rows 24807 | genes 4714
+  Base PI   : -0.042 (conv=1117, div=1216)
+====================================================================================
+
+  PURPOSE: Stage 4 does NOT generate new GO hits. It stress-tests each
+  narrative sentence by moving the threshold, dropping a hub, changing the
+  aggregation, and refusing to count LD-linked genes as independent.
+  The deliverables are the scorecard + the named-gene fragility grid.
+
+====================================================================================
+  CLAIM SCORECARD (headline verdicts)
+====================================================================================
+  [✔ PASS ] C1_three_layer        Shared-sign mid-list + opposite-sign extremes + trait-private extremes
+            evidence: private layers persist across thresholds; div-at-|Z|>=6: False
+  [✔ PASS ] C2_oligogenic         Library-wide PI crosses ~0 after scaffold or |Z|>8 drop
+            evidence: PI all=-0.042 → no-scaffold=0.045 / no|Z|>8=0.023
+  [✔ PASS ] C3_hubs               Opposite-sign extremes concentrate in MHC / 16p11.2 / 4q24
+            evidence: hubs enriched for divergence (P<=0.05): ['MHC_6p21', 'chr16p11.2', 'chr4q24', 'scaffold']
+  [✔ PASS ] C4_sixgene            UBE2D3 NOTCH4 MAPK3 RNF5 AGER CENPE are stable opposite-sign nodes
+            evidence: KEEP_AS_NODE among 6-gene block: ['UBE2D3', 'MAPK3', 'AGER', 'CENPE']
+  [✔ PASS ] C5_mild_module_PI     Wnt/membrane/cell-cycle/proteostasis only mildly divergent
+            evidence: largest single-set PI move=0.009; PI straddles 0: False
+  [✔ PASS ] C6_no_global_flip     conv~div: not a global sign inversion
+            evidence: mid-range frac_div stable in 0.40-0.60: True | boot CI [0.452,0.525] includes 0.5: True
+  [✔ PASS ] C7_low_jaccard        Top-N gene lists barely overlap
+            evidence: top-50 Jaccard=0.053
+  [~ SOFT ] C8_fao_t2d_only       FAO is a T2D set-level signal, not a gene-wise flip
+            evidence: FAO median dm_cvs=-0.440, scz=0.201, n_both≈9
+  [✔ PASS ] C9_mhc_mixed          MHC is mixed, not clean SCZ-down / T2D-up
+            evidence: MHC conv=10 div=10 (mixed: True)
+
+------------------------------------------------------------------------------------
+  [4.2] THRESHOLD SWEEP (does the paradox depend on |Z|>=1.96?)
+------------------------------------------------------------------------------------
+    zcut   n_conv  n_div  frac_div  priv_dm_cvs  priv_scz
+     1.0      839    874    0.510      979      797
+    1.64      489    467    0.488     1041      787
+    1.96      376    358    0.488      984      732
+    2.58      204    211    0.508      893      603
+     3.0      145    160    0.525      785      489
+     4.0       67     69    0.507      569      315
+     6.0       16     17    0.515      296      133
+     8.0        3      4    0.571      169       57
+
+    READING: if frac_div is ~0.5 across 1.64-2.58 the mix is balanced (no global
+    flip, C6). If frac_div only exceeds ~0.7 at |Z|>=6, the discordance is an
+    EXTREME-tail phenomenon → oligogenic (C2), not a whole-library polarity.
+
+------------------------------------------------------------------------------------
+  [4.3] AGGREGATION SWEEP (median vs mean vs signed-max)
+------------------------------------------------------------------------------------
+    median     : conv=376 div=358 frac_div=0.488
+    mean       : conv=376 div=358 frac_div=0.488
+    signed_max : conv=376 div=358 frac_div=0.488
+
+    If median & mean agree but signed-max diverges, one extreme set per gene
+    is carrying the flip → quote median only.
+
+------------------------------------------------------------------------------------
+  [4.4] KEEP-SET DEFINITION SWEEP (is PI robust to set inclusion?)
+------------------------------------------------------------------------------------
+    survives_extreme  : n_sets=109 PI=-0.042 conv=1117 div=1216
+    all_perm_hits     : n_sets=131 PI=-0.048 conv=1294 div=1424
+    perm_sig          : n_sets=20 PI=-0.116 conv=171 div=216
+
+    C2 holds only if PI stays near 0 (or crosses) under every definition.
+
+------------------------------------------------------------------------------------
+  [4.5/4.6] LEAVE-ONE-HUB-OUT vs SIZE-MATCHED NULL (C3)
+------------------------------------------------------------------------------------
+    baseline frac_div (|Z|>=1.96) = 0.488
+    dropped        n_drop  conv  div  frac_div  PI_setpaired  null_P
+    MHC_6p21           26   371  348    0.484       -0.042   0.000
+    chr16p11.2          6   376  353    0.484       -0.035   0.000
+    chr4q24             2   376  356    0.486       -0.040   0.020
+    scaffold           22   370  349    0.485       +0.003   0.025
+    named6              6   376  352    0.484       -0.034      NA
+
+    null_P = P(random same-size drop gives frac_div <= observed). Small P means
+    the hub is genuinely enriched for divergence — dropping it removes more
+    divergent genes than a random gene block would.
+    → hubs passing null test (P<=0.05): ['MHC_6p21', 'chr16p11.2', 'chr4q24', 'scaffold']
+
+------------------------------------------------------------------------------------
+  [4.7] EFFECTIVE INDEPENDENT UNITS (stop counting LD neighbours)
+------------------------------------------------------------------------------------
+    divergent  : listed=358  → independent≈344  (MHC=10, 16p11.2=5, 4q24=2, other=341)
+    convergent : listed=376  → independent≈372  (MHC=5, 16p11.2=0, 4q24=0, other=371)
+
+    Report 344 independent divergent units, NOT 358. If 344 is still large,
+    divergence is polygenic-outside-hubs; if it collapses hard, C2/C3 confirmed.
+
+------------------------------------------------------------------------------------
+  [4.8] NAMED-GENE FRAGILITY GRID (C4 — which genes survive publication)
+------------------------------------------------------------------------------------
+    Gene         hub          n_sets  fracDiv  hijack  |Z|>8  verdict            flags
+    UBE2D3       chr4q24           4     1.00    True      8  KEEP_AS_NODE       stouffer_hijack,extreme_Z
+    NOTCH4       MHC_6p21          1     1.00    True      2  KEEP_WITH_CAVEAT   few_sets,stouffer_hijack,extreme_Z
+    MAPK3        chr16p11.2        7     1.00    True     14  KEEP_AS_NODE       stouffer_hijack,extreme_Z
+    RNF5         MHC_6p21          2     1.00    True      2  KEEP_WITH_CAVEAT   few_sets,stouffer_hijack,extreme_Z
+    AGER         MHC_6p21          3     1.00    True      3  KEEP_AS_NODE       stouffer_hijack,extreme_Z
+    CENPE        chr4q24           3     1.00    True      3  KEEP_AS_NODE       stouffer_hijack,extreme_Z
+    INO80E       chr16p11.2        2     1.00    True      4  KEEP_WITH_CAVEAT   few_sets,stouffer_hijack,extreme_Z
+    BTRC         other            21     1.00    True     21  KEEP_AS_NODE       stouffer_hijack,extreme_Z
+    KCTD13       chr16p11.2        3     1.00    True      3  KEEP_AS_NODE       stouffer_hijack,extreme_Z
+    C4A          MHC_6p21          2     0.00    True      2  DEMOTE             few_sets,GO_dependent,stouffer_hijack,extreme_Z
+    MED1         other             2     0.00    True      4  DEMOTE             few_sets,GO_dependent,stouffer_hijack,extreme_Z
+    TM6SF2       other             1     0.00    True      2  DEMOTE             few_sets,GO_dependent,stouffer_hijack,extreme_Z
+
+    PUBLICATION RULE: only KEEP_AS_NODE genes go in the main table without a
+    one-set footnote. KEEP_WITH_CAVEAT need a caveat; DEMOTE / ABSENT are cut.
+    KEEP_AS_NODE overall: ['UBE2D3', 'MAPK3', 'AGER', 'CENPE', 'BTRC', 'KCTD13']
+    KEEP_AS_NODE within 6-gene block: ['UBE2D3', 'MAPK3', 'AGER', 'CENPE']
+
+------------------------------------------------------------------------------------
+  [4.9] JACKKNIFE POLARITY OVER SETS (C2/C5 — single-set artefacts)
+------------------------------------------------------------------------------------
+    PI over leave-one-set-out: min=-0.051 median=-0.042 max=-0.040
+    largest single-set |ΔPI| = 0.009
+    Sets that move PI most:
+      NEUTROPHIL_ACTIVATION_INVOLVED_IN_IMMUNE_RESPONSE_GO_0002283 PI=-0.051 dPI=-0.009
+      NEUTROPHIL_MEDIATED_IMMUNITY_GO_0002446                 PI=-0.051 dPI=-0.008
+      NEUTROPHIL_DEGRANULATION_GO_0043312                     PI=-0.051 dPI=-0.008
+      CELLULAR_PROTEIN_MODIFICATION_PROCESS_GO_0006464        PI=-0.051 dPI=-0.008
+      CELLULAR_RESPONSE_TO_TUMOR_NECROSIS_FACTOR_GO_0071356   PI=-0.047 dPI=-0.005
+      TRANSCRIPTION_BY_RNA_POLYMERASE_II_GO_0006366           PI=-0.045 dPI=-0.003
+      MITOTIC_NUCLEAR_DIVISION_GO_0140014                     PI=-0.040 dPI=+0.003
+      TRANSCRIPTION_DNA_TEMPLATED_GO_0006351                  PI=-0.045 dPI=-0.003
+
+    If one ubiquitin/proteasome set moves PI by >0.05, module-level PI (C5) is a
+    single-term artefact. If jackknife PI straddles 0, there is no stable
+    library-wide sign → supports C2 (oligogenic).
+
+------------------------------------------------------------------------------------
+  [4.10] TISSUE-SIGN CONSISTENCY OF NAMED GENES
+------------------------------------------------------------------------------------
+    (no per-tissue gene Z available in pipeline outputs)
+
+------------------------------------------------------------------------------------
+  [4.11] FAO (C8) & MHC (C9) MODULE CHECKS
+------------------------------------------------------------------------------------
+    FAO   : conv=5 div=4 frac_div=0.444 medZ_dm_cvs=-0.44 medZ_scz=+0.20 n=52
+    MHC_I : conv=10 div=10 frac_div=0.500 medZ_dm_cvs=-0.39 medZ_scz=-0.70 n=70
+
+    C8 pass: FAO has few both-sig genes and a clear T2D-direction median with SCZ~0.
+    C9 pass: MHC conv≈div (mixed system, not a clean SCZ-down / T2D-up block).
+
+------------------------------------------------------------------------------------
+  [C7] TOP-N GENE OVERLAP (label-sharing vs profile-sharing)
+------------------------------------------------------------------------------------
+    top-25  : overlap=2    jaccard=0.042
+    top-50  : overlap=5    jaccard=0.053
+    top-100 : overlap=8    jaccard=0.042
+
+    Low Jaccard + many divergent genes = shared GO LABELS, different gene
+    identity between diseases — do not claim a shared biological profile.
+
+------------------------------------------------------------------------------------
+  [4.12] BOOTSTRAP CI ON DIVERGENT FRACTION (C6)
+------------------------------------------------------------------------------------
+    divergent fraction: median=0.489 95% CI=[0.452, 0.525]
+
+    CI includes 0.5: True
+    → If it includes 0.5 you MUST write 'compatible with equal conv/div', NOT
+      'discordance-dominated'. This is the strict wording guard for C6.
+
+====================================================================================
+  FRAMING DECISION (what sentence the data will support)
+====================================================================================
+  → BEST CLAIM: 'three hubs (MHC / 16p11.2 / 4q24), OLIGOGENIC opposite
+    polarity on a shared-sign polygenic background.'
+
+  Named genes admissible in the main table (KEEP_AS_NODE): UBE2D3, MAPK3, AGER, CENPE, BTRC, KCTD13
+
+====================================================================================
+  GRAND TALLY
+====================================================================================
+    Kept robust sets                        : 109
+    Genes classified (median-Z)             : 4179
+    Claims PASS                             : 8
+    Claims SOFT                             : 1
+    Claims FAIL                             : 0
+    Claims not tested                       : 0
+    KEEP_AS_NODE named genes                : 6
+    Hubs passing null (C3)                  : 4
+    Divergent independent units             : 344
+
+====================================================================================
+  OUTPUT FILES (in /content/088HvI_stage4):
+    s4_claim_scorecard.csv          (headline verdicts)
+    s4_named_gene_fragility.csv     (which genes survive publication)
+    s4_threshold_sweep.csv          + .png
+    s4_aggregation_sweep.csv
+    s4_keepset_sweep.csv
+    s4_leave_hub_out.csv            + .png
+    s4_hub_null.csv
+    s4_locus_collapse.csv
+    s4_jackknife_sets.csv
+    s4_tissue_sign_consistency.csv  (if per-tissue Z present)
+    s4_fao_mhc_check.csv
+    s4_topN_overlap.csv
+    s4_bootstrap_fracdiv.png
+    stage4_summary.txt, stage4_run_log.txt
+====================================================================================

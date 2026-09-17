@@ -1,0 +1,320 @@
+==================================================================================
+  088HvI  STAGE 3 + 3b  GENE-LEVEL SIGNIFICANT-RESULTS SUMMARY
+  Source pipeline : /content/088HvI_results
+  Downstream input: /content/088HvI_downstream
+  Generated       : 2026-09-17 10:28:35
+  Diseases        : dm_cvs (T2D/CVD)  vs  scz (SCZ)
+  Thresholds      : |Z|>1.96 sig, |Z|>8.0 extreme, p<0.05, FDR<0.05
+  Robust kept sets: 109  |  gene-rows 24807  |  genes 4714
+==================================================================================
+
+  METHOD NOTE: gene is the unit, not the GO term. All statistics below are
+  restricted to permutation-significant sets that keep |Z|>=1.96 after |Z|>8
+  driver removal, so nested GO re-counting of HLA/PSMD is suppressed.
+
+==================================================================================
+  [A] GENE-LEVEL CONVERGENCE / DIVERGENCE (median Z across kept sets)
+==================================================================================
+    convergent      : 376
+    divergent       : 358
+    private_dm_cvs  : 984
+    private_scz     : 732
+    weak            : 1729
+
+    Among both-significant genes: 358 divergent vs 376 convergent
+    → divergent fraction = 0.49  → CONCORDANCE-DOMINATED (shared-direction overlap)
+
+    Top DIVERGENT genes (largest |Z gap|, opposite sign):
+      UBE2D3         dm_cvs=+20.95  scz=-10.73  gap=31.68
+      NOTCH4         dm_cvs=-11.70  scz=+19.64  gap=31.35
+      INO80E         dm_cvs=-16.02  scz=+12.81  gap=28.83
+      MAPK3          dm_cvs=-15.02  scz=+12.60  gap=27.61
+      CENPE          dm_cvs=-17.87  scz=+7.76  gap=25.63
+      RNF5           dm_cvs=-5.73  scz=+19.66  gap=25.39
+      AGER           dm_cvs=+2.41  scz=-21.89  gap=24.30
+      CLIC1          dm_cvs=-2.49  scz=+20.63  gap=23.12
+      RAB29          dm_cvs=-20.73  scz=+2.18  gap=22.90
+      KLHL9          dm_cvs=+16.26  scz=-3.92  gap=20.18
+      HLA-DQA2       dm_cvs=+13.17  scz=-6.23  gap=19.40
+      DYNLRB1        dm_cvs=+14.60  scz=-4.23  gap=18.83
+      PSMD4          dm_cvs=-16.25  scz=+2.47  gap=18.72
+      TCTN1          dm_cvs=-4.14  scz=+14.10  gap=18.24
+      PRC1           dm_cvs=-14.26  scz=+3.92  gap=18.17
+      HHEX           dm_cvs=-15.72  scz=+2.37  gap=18.08
+      RNF123         dm_cvs=+14.58  scz=-3.48  gap=18.06
+      FBXO17         dm_cvs=+13.23  scz=-4.30  gap=17.53
+      TEX14          dm_cvs=+11.94  scz=-5.42  gap=17.36
+      ARL3           dm_cvs=-7.82  scz=+9.52  gap=17.34
+
+    Top CONVERGENT genes (both strong, same sign):
+      MARK3          dm_cvs=-14.93  scz=-9.63
+      MED1           dm_cvs=+15.64  scz=+9.38
+      TM6SF2         dm_cvs=+8.98  scz=+9.13
+      MOV10          dm_cvs=-11.26  scz=-7.91
+      C4A            dm_cvs=+7.65  scz=+23.74
+      SNF8           dm_cvs=+7.28  scz=+7.97
+      GAS8           dm_cvs=-7.20  scz=-8.64
+      GTF2I          dm_cvs=+19.84  scz=+7.08
+      MAP1LC3A       dm_cvs=+7.07  scz=+7.80
+      NRBP1          dm_cvs=-13.15  scz=-6.81
+      CDC25A         dm_cvs=-6.57  scz=-8.00
+      ELP5           dm_cvs=-6.39  scz=-6.58
+      GID4           dm_cvs=-7.47  scz=-6.32
+      PPP2R5A        dm_cvs=-6.50  scz=-6.30
+      STAM2          dm_cvs=-6.15  scz=-7.06
+      CDIP1          dm_cvs=-8.62  scz=-6.12
+      HLA-C          dm_cvs=-5.96  scz=-9.64
+      TRPC4AP        dm_cvs=-5.93  scz=-6.52
+      APH1A          dm_cvs=-11.94  scz=-5.83
+      GTF2A1L        dm_cvs=-5.78  scz=-5.95
+
+    Top SCZ-private (scz) genes:
+      MDK            scz=-16.83  (dm_cvs=+0.37)
+      FLOT1          scz=-14.78  (dm_cvs=+0.44)
+      VPS29          scz=-13.83  (dm_cvs=-0.72)
+      CUL9           scz=+12.69  (dm_cvs=-1.73)
+      NEK4           scz=+12.64  (dm_cvs=+0.15)
+      HLA-DQB2       scz=-11.84  (dm_cvs=+1.06)
+      CPEB1          scz=-11.69  (dm_cvs=-0.37)
+      ACTR1B         scz=-11.24  (dm_cvs=+1.30)
+      KLHL20         scz=-11.22  (dm_cvs=+0.99)
+      PPP1CC         scz=-10.34  (dm_cvs=-0.65)
+      YWHAB          scz=+10.22  (dm_cvs=+1.40)
+      UBXN2B         scz=-9.70  (dm_cvs=+1.48)
+      ARL5B          scz=+9.36  (dm_cvs=+0.08)
+      EHD1           scz=+8.75  (dm_cvs=-1.65)
+      SLC26A6        scz=+8.62  (dm_cvs=+0.35)
+
+    Top T2D-private (dm_cvs) genes:
+      BCAR1          dm_cvs=-27.36  (scz=+0.10)
+      MAP2K1         dm_cvs=-20.66  (scz=+1.22)
+      ATG5           dm_cvs=+20.18  (scz=-1.89)
+      ZWINT          dm_cvs=-20.01  (scz=-0.28)
+      IL27           dm_cvs=+19.83  (scz=+1.62)
+      EEF2           dm_cvs=-19.75  (scz=+1.42)
+      RNF141         dm_cvs=+17.86  (scz=+0.59)
+      UBE2W          dm_cvs=+17.67  (scz=-1.06)
+      JMJD7          dm_cvs=+16.98  (scz=-0.13)
+      PSMD6          dm_cvs=+16.79  (scz=+1.25)
+      DNM2           dm_cvs=+16.72  (scz=-1.34)
+      THY1           dm_cvs=+16.31  (scz=+0.67)
+      TLE1           dm_cvs=+16.30  (scz=+0.38)
+      CEP68          dm_cvs=+15.70  (scz=-1.26)
+      RBL2           dm_cvs=+15.11  (scz=-1.41)
+
+==================================================================================
+  [B] MODULE POLARITY INDEX  (+1 all-convergent … -1 all-divergent)
+==================================================================================
+    Wnt            PI= -0.18  (conv=66, div=95, both_sig=161, sets=7) → DIVERGENT
+    membrane       PI= -0.16  (conv=52, div=72, both_sig=124, sets=8) → DIVERGENT
+    cell_cycle     PI= -0.14  (conv=95, div=127, both_sig=222, sets=13) → DIVERGENT
+    proteostasis   PI= -0.06  (conv=145, div=163, both_sig=308, sets=9) → DIVERGENT
+    cytokine       PI= +0.01  (conv=37, div=36, both_sig=73, sets=1) → CONVERGENT
+    MHC_I          PI= +0.03  (conv=20, div=19, both_sig=39, sets=2) → CONVERGENT
+    FAO            PI= +0.11  (conv=5, div=4, both_sig=9, sets=1) → CONVERGENT
+
+    Discordant modules (PI<0): Wnt, membrane, cell_cycle, proteostasis
+    Concordant modules (PI>0): cytokine, MHC_I, FAO
+
+==================================================================================
+  [C] IS THE PARADOX POLYGENIC OR SCAFFOLD-DRIVEN?  (3.12)
+==================================================================================
+    all kept-set genes        : PI=-0.042  conv=1117  div=1216
+    drop proteasome scaffold  : PI=+0.045  conv=1095  div=1000
+    drop |Z|>8 anywhere       : PI=+0.023  conv=954  div=912
+
+    VERDICT: polarity collapses toward 0 after filtering → paradox is OLIGOGENIC,
+             concentrated at proteasome/MHC nodes. Rewrite as node-specific, not global.
+
+==================================================================================
+  [D] NAMED DISCORDANT DRIVERS (passport + polarity stability)
+==================================================================================
+    Gene           medZ_dm_cvs  medZ_scz  n_sets  div/both  fracDiv  pol  |Z|>8  hijack
+    PSMB10          +3.47     -9.65     47 47/47       1.00   -1    47   Y
+    PSMD4          -16.25     +2.47     47 47/47       1.00   -1    47   Y
+    BTRC           +11.03     -5.75     21 21/21       1.00   -1    21   Y
+    MAPK3          -15.02    +12.60      7 7/7        1.00   -1    14   Y
+    UBE2D3         +20.95    -10.73      4 4/4        1.00   -1     8   Y
+    KCTD13          +4.57    -12.57      3 3/3        1.00   -1     3   Y
+    CENPE          -17.87     +7.76      3 3/3        1.00   -1     3   Y
+    AGER            +2.41    -21.89      3 3/3        1.00   -1     3   Y
+    RNF5            -5.73    +19.66      2 2/2        1.00   -1     2   Y
+    HLA-DQA2       +13.17     -6.23      2 2/2        1.00   -1     2   Y
+    NOTCH4         -11.70    +19.64      1 1/1        1.00   -1     2   Y
+    PSMC4          -10.59     +0.04     47 0/0          NA   -1    47   Y
+    PSMA1          -11.31     +0.34     47 0/0          NA   -1    47   Y
+    PSMB2           +0.33     -7.75     47 0/0          NA   -1     0   Y
+    HLA-DQB2        +1.06    -11.84      2 0/0          NA   -1     2   Y
+    TCF7L2          -8.72     +0.94      6 0/0          NA   -1     6   Y
+    RAB11A          -1.32     -0.86     30 0/0          NA   +1     0   Y
+    PSMD6          +16.79     +1.25     50 0/0          NA   +1    50   Y
+    SYT11           -5.02     -4.96      1 0/1        0.00   +1     0   Y
+    VPS29           -0.72    -13.83      1 0/0          NA   +1     1   Y
+    AKT1            -3.80     -3.38     10 0/10       0.00   +1     0   Y
+    BTN3A2          +3.04    +22.29      1 0/1        0.00   +1     1   Y
+
+    Genes with DIV-fraction >= 0.70 (stable opposite polarity across sets):
+      AGER, BTRC, CENPE, HLA-DQA2, HLA-DQB2, KCTD13, MAPK3, NOTCH4, PSMA1, PSMB10, PSMB2, PSMC4, PSMD4, RNF5, TCF7L2, UBE2D3
+
+    Publication 6-gene block:
+      UBE2D3      dm_cvs=20.95  scz=-10.73  fracDiv=1.0  hijack=True  — E2 conjugase; proteostasis polarity flipped
+      NOTCH4      dm_cvs=-11.7  scz=19.64  fracDiv=1.0  hijack=True  — MHC class III / SCZ locus, opposite in T2D
+      MAPK3       dm_cvs=-15.02  scz=12.6  fracDiv=1.0  hijack=True  — ERK1; insulin-cytokine vs synaptic MAPK
+      RNF5        dm_cvs=-5.73  scz=19.66  fracDiv=1.0  hijack=True  — ERAD / MHC-I quality control
+      AGER        dm_cvs=2.41  scz=-21.89  fracDiv=1.0  hijack=True  — RAGE; expected T2D-up, SCZ-down
+      CENPE       dm_cvs=-17.87  scz=7.76  fracDiv=1.0  hijack=True  — mitotic motor; cell-cycle program inverted
+
+    LOO caution — named genes that hijack a set's Stouffer (>20% or sign-flip):
+      AGER         dm_cvs: 1 set(s) affected
+      AGER         scz: 3 set(s) affected
+      AKT1         dm_cvs: 4 set(s) affected
+      AKT1         scz: 3 set(s) affected
+      BTN3A2       scz: 1 set(s) affected
+      BTRC         dm_cvs: 15 set(s) affected
+      BTRC         scz: 3 set(s) affected
+      CENPE        dm_cvs: 3 set(s) affected
+      CENPE        scz: 2 set(s) affected
+      HLA-DQA2     dm_cvs: 1 set(s) affected
+      HLA-DQA2     scz: 1 set(s) affected
+      HLA-DQB2     scz: 2 set(s) affected
+      HLA-DRB5     scz: 1 set(s) affected
+      KCTD13       scz: 3 set(s) affected
+      MAPK3        dm_cvs: 6 set(s) affected
+      MAPK3        scz: 6 set(s) affected
+      NOTCH4       dm_cvs: 1 set(s) affected
+      NOTCH4       scz: 1 set(s) affected
+      PSMA1        dm_cvs: 38 set(s) affected
+      PSMB10       dm_cvs: 17 set(s) affected
+      PSMB10       scz: 30 set(s) affected
+      PSMB2        scz: 22 set(s) affected
+      PSMC4        dm_cvs: 38 set(s) affected
+      PSMD4        dm_cvs: 44 set(s) affected
+      PSMD4        scz: 2 set(s) affected
+      PSMD6        dm_cvs: 47 set(s) affected
+      PSMD6        scz: 1 set(s) affected
+      RAB11A       dm_cvs: 4 set(s) affected
+      RAB11A       scz: 4 set(s) affected
+      RNF5         scz: 2 set(s) affected
+      SYT11        dm_cvs: 1 set(s) affected
+      SYT11        scz: 1 set(s) affected
+      TCF7L2       dm_cvs: 5 set(s) affected
+      UBE2D3       dm_cvs: 3 set(s) affected
+      UBE2D3       scz: 3 set(s) affected
+      VPS29        scz: 1 set(s) affected
+
+==================================================================================
+  [E] RESIDUAL DIVERGENCE AFTER REMOVING MHC + PROTEASOME MODULES
+==================================================================================
+    Residual polarity index = -0.041  (conv=952, div=1034)
+
+    Top residual divergent genes (non-scaffold part of the paradox):
+      UBE2D3         dm_cvs=+20.95  scz=-10.73  gap=31.68
+      NOTCH4         dm_cvs=-11.70  scz=+19.64  gap=31.35
+      INO80E         dm_cvs=-16.02  scz=+12.81  gap=28.83
+      MAPK3          dm_cvs=-15.02  scz=+12.60  gap=27.61
+      CENPE          dm_cvs=-17.87  scz=+7.76  gap=25.63
+      AGER           dm_cvs=+2.41  scz=-21.89  gap=24.30
+      CLIC1          dm_cvs=-2.49  scz=+20.63  gap=23.12
+      RAB29          dm_cvs=-20.73  scz=+2.18  gap=22.90
+      KLHL9          dm_cvs=+16.26  scz=-3.92  gap=20.18
+      HLA-DQA2       dm_cvs=+13.17  scz=-6.23  gap=19.40
+      DYNLRB1        dm_cvs=+14.60  scz=-4.23  gap=18.83
+      PSMD4          dm_cvs=-16.25  scz=+2.47  gap=18.72
+      TCTN1          dm_cvs=-4.14  scz=+14.10  gap=18.24
+      PRC1           dm_cvs=-14.26  scz=+3.92  gap=18.17
+      HHEX           dm_cvs=-15.72  scz=+2.37  gap=18.08
+      RNF123         dm_cvs=+14.58  scz=-3.48  gap=18.06
+      FBXO17         dm_cvs=+13.23  scz=-4.30  gap=17.53
+      TEX14          dm_cvs=+11.94  scz=-5.42  gap=17.36
+      ARL3           dm_cvs=-7.82  scz=+9.52  gap=17.34
+      BTRC           dm_cvs=+11.03  scz=-5.75  gap=16.78
+
+==================================================================================
+  [F] SCAFFOLD vs PRIVATE INFLUENTIAL GENES (non-independence of GO sets)
+==================================================================================
+    Scaffold genes influential in BOTH traits: 165
+      PSMD6, PSMD4, PSMB7, PSMD11, PSMB8, PSMC3, PSMA6, PSMB10, CUL1, PSMB5, BTRC, PSMD9, PSMB4, NFKB1, PSMC6, PSMD8, PSMA4, IKBKB, PSMB9, RAB8B, ROCK1, MAPK3, CCNB1, EP300, PSMD3, PXMP4, RAB11A, LATS1, KLHL9, TLR2
+    Private influential genes (one trait only): 1292
+
+    READING: GO terms sharing scaffold genes are statistically NON-independent —
+    do not count each affected GO set as a separate finding.
+
+==================================================================================
+  [G] RANK-RANK TOP-N GENE OVERLAP (blunt convergence metric)
+==================================================================================
+    top-25  : overlap=2    jaccard=0.042
+    top-50  : overlap=5    jaccard=0.053
+    top-100 : overlap=8    jaccard=0.042
+    same-direction up  : 1 shared → MED1
+    same-direction down: 2 shared → MARK3, MOV10
+
+    LOW Jaccard + high divergent count = LABEL-SHARING, not profile-sharing.
+
+==================================================================================
+  [H] EXTREME-GENE AUDIT (|Z|>8 — treat as artefact candidates, not members)
+==================================================================================
+      ZFP36L2        dm_cvs: medZ=+32.07 in 6 set(s)
+      BCAR1          dm_cvs: medZ=-27.36 in 2 set(s)
+      C4A            scz: medZ=+23.74 in 2 set(s)
+      BTN3A2         scz: medZ=+22.29 in 1 set(s)
+      AGER           scz: medZ=-21.89 in 3 set(s)
+      UBE2D3         dm_cvs: medZ=+20.95 in 4 set(s)
+      RAB29          dm_cvs: medZ=-20.73 in 2 set(s)
+      MAP2K1         dm_cvs: medZ=-20.66 in 3 set(s)
+      CLIC1          scz: medZ=+20.63 in 2 set(s)
+      ATG5           dm_cvs: medZ=+20.18 in 3 set(s)
+      ZWINT          dm_cvs: medZ=-20.01 in 2 set(s)
+      UBE2E2         dm_cvs: medZ=+19.87 in 3 set(s)
+      GTF2I          dm_cvs: medZ=+19.84 in 1 set(s)
+      IL27           dm_cvs: medZ=+19.83 in 1 set(s)
+      EEF2           dm_cvs: medZ=-19.75 in 3 set(s)
+      RNF5           scz: medZ=+19.66 in 2 set(s)
+      NOTCH4         scz: medZ=+19.64 in 1 set(s)
+      HSPA8          dm_cvs: medZ=-19.46 in 6 set(s)
+      FTO            dm_cvs: medZ=+19.14 in 1 set(s)
+      CENPE          dm_cvs: medZ=-17.87 in 3 set(s)
+      RNF141         dm_cvs: medZ=+17.86 in 1 set(s)
+      UBE2W          dm_cvs: medZ=+17.67 in 3 set(s)
+      JMJD7          dm_cvs: medZ=+16.98 in 1 set(s)
+      MDK            scz: medZ=-16.83 in 4 set(s)
+      PSMD6          dm_cvs: medZ=+16.79 in 50 set(s)
+
+    Drop these from narrative gene lists unless they ARE the point (e.g. MHC BTN3A2/HLA).
+
+==================================================================================
+  DECISION RULES (from spec)
+==================================================================================
+    • Keep paradox paragraph IF proteostasis/MAPK/Wnt module PI<0 AND named genes
+      (UBE2D3/NOTCH4/MAPK3) show frac_divergent>=0.70.
+    • Cut a named gene IF its sign is GO-dependent (fails 3.10) or it is absent from
+      kept robust sets — do NOT quote raw +20/-10 Z from a hijacked ubiquitin set.
+    • If PI→~0 after dropping scaffold (Section C) → rewrite as OLIGOGENIC opposite
+      polarity at proteasome/MHC nodes, not 'programs used in opposite directions'.
+
+==================================================================================
+  GRAND TALLY
+==================================================================================
+    Robust kept sets                            : 109
+    Genes classified (median-Z)                 : 4179
+    Divergent genes (both-sig)                  : 358
+    Convergent genes (both-sig)                 : 376
+    SCZ-private (scz)                           : 732
+    T2D-private (dm_cvs)                        : 984
+    Discordant modules (PI<0)                   : 4
+    Named drivers profiled                      : 22
+    Stable-divergent named genes                : 16
+    Residual divergent genes (non-scaffold)     : 332
+    Extreme (|Z|>8) gene entries                : 249
+
+==================================================================================
+  OUTPUT FILES (in /content/088HvI_stage3):
+    s3_gene_consensus.csv, s3_gene_set_classes.csv, s3_gene_dominant_class.csv,
+    s3_gene_medianZ_classes.csv, s3_module_gene_classes.csv,
+    s3_scaffold_influencers.csv, s3_private_influencers.csv, s3_topN_overlap.csv,
+    s3_extreme_genes.csv, s3_driver_passport.csv, s3_named_driver_table.csv,
+    s3_named_gene_by_set.csv, s3_named_gene_polarity_stability.csv,
+    s3_module_polarity_index.csv, s3_polarity_filters.csv, s3_named_gene_loo.csv,
+    Table_discordant_drivers.csv, s3_residual_divergent.csv,
+    s3_medianZ_scatter.png, s3_polarity_figure.png,
+    stage3_summary.txt, stage3_run_log.txt
+==================================================================================

@@ -1,0 +1,575 @@
+================================================================================
+  088HvI  DOWNSTREAM SIGNIFICANT-RESULTS SUMMARY
+  Source folder : /content/088HvI_results
+  Generated     : 2026-09-17 08:48:40
+  Diseases      : dm_cvs, scz
+  Thresholds    : |Z|>1.96, p<0.05, FDR<0.05, driver |Z|>8.0
+================================================================================
+
+--------------------------------------------------------------------------------
+  DATA INVENTORY
+--------------------------------------------------------------------------------
+    enrichment rows       :    2,240
+    pairwise rows         :      160
+    influence rows        :   31,858
+    proximity rows        :      158
+    family-wise FDR rows  :    2,993
+    unique gene sets      :      160
+
+================================================================================
+  [1] CLAIM SETS  (permutation-significant meta-enrichment)
+================================================================================
+  21 meta-level enrichment(s) with permutation p < 0.05:
+
+    • dm_cvs  |  REGULATION_OF_HEMATOPOIETIC_PROGENITOR_CELL_DIFFERENTIATION_
+        n=59  StoufferZ=-8.231 CI95=[-16.99,0.28]  perm_p=0.0203  wilcoxon_p=0.08945
+    • dm_cvs  |  CYTOKINE_MEDIATED_SIGNALING_PATHWAY_GO_0019221
+        n=462  StoufferZ=-7.608 CI95=[-14.75,-0.65]  perm_p=0.0304  wilcoxon_p=0.0474  [family-wise FDR set]
+    • dm_cvs  |  FATTY_ACID_OXIDATION_GO_0019395
+        n=49  StoufferZ=-7.588 CI95=[-12.77,-2.79]  perm_p=0.0309  wilcoxon_p=0.01649  [family-wise FDR set]
+    • dm_cvs  |  REGULATION_OF_CELL_DIVISION_GO_0051302
+        n=64  StoufferZ=7.148 CI95=[-0.49,15.81]  perm_p=0.0446  wilcoxon_p=0.1585  [family-wise FDR set]
+    • dm_cvs  |  REGULATION_OF_CELL_CYCLE_PROCESS_GO_0010564
+        n=86  StoufferZ=7.064 CI95=[-2.76,17.26]  perm_p=0.045  wilcoxon_p=0.3559
+    • scz  |  ANTIGEN_PROCESSING_AND_PRESENTATION_OF_EXOGENOUS_PEPTIDE_ANT
+        n=63  StoufferZ=-8.860 CI95=[-15.17,-2.74]  perm_p=0.0011  wilcoxon_p=0.02303  [family-wise FDR set]
+    • scz  |  ANTIGEN_PROCESSING_AND_PRESENTATION_OF_EXOGENOUS_PEPTIDE_ANT
+        n=68  StoufferZ=-8.186 CI95=[-14.64,-2.15]  perm_p=0.0024  wilcoxon_p=0.04066  [family-wise FDR set]
+    • scz  |  NON_CANONICAL_WNT_SIGNALING_PATHWAY_GO_0035567
+        n=106  StoufferZ=-7.683 CI95=[-12.72,-2.39]  perm_p=0.0026  wilcoxon_p=0.03972  [family-wise FDR set]
+    • scz  |  POSITIVE_REGULATION_OF_ENDOPEPTIDASE_ACTIVITY_GO_0010950
+        n=25  StoufferZ=-7.962 CI95=[-17.34,-0.80]  perm_p=0.0035  wilcoxon_p=0.1485
+    • scz  |  REGULATION_OF_CELL_CYCLE_PHASE_TRANSITION_GO_1901987
+        n=80  StoufferZ=-7.185 CI95=[-13.01,-1.25]  perm_p=0.006899  wilcoxon_p=0.02909
+    • scz  |  REGULATION_OF_ENDOPEPTIDASE_ACTIVITY_GO_0052548
+        n=56  StoufferZ=-7.079 CI95=[-12.40,-2.43]  perm_p=0.007199  wilcoxon_p=0.02881  [family-wise FDR set]
+    • scz  |  ANAPHASE_PROMOTING_COMPLEX_DEPENDENT_CATABOLIC_PROCESS_GO_00
+        n=69  StoufferZ=-6.959 CI95=[-12.61,-1.35]  perm_p=0.007899  wilcoxon_p=0.02476
+    • scz  |  PROTEIN_DNA_COMPLEX_ASSEMBLY_GO_0065004
+        n=98  StoufferZ=-5.977 CI95=[-11.71,-0.12]  perm_p=0.0183  wilcoxon_p=0.1849
+    • scz  |  REGULATION_OF_KETONE_BIOSYNTHETIC_PROCESS_GO_0010566
+        n=7  StoufferZ=6.367 CI95=[2.54,10.19]  perm_p=0.0211  wilcoxon_p=0.01562
+    • scz  |  PROTEIN_LOCALIZATION_TO_MEMBRANE_GO_0072657
+        n=176  StoufferZ=5.761 CI95=[0.82,10.42]  perm_p=0.0238  wilcoxon_p=0.01905  [family-wise FDR set]
+    • scz  |  SCF_DEPENDENT_PROTEASOMAL_UBIQUITIN_DEPENDENT_PROTEIN_CATABO
+        n=76  StoufferZ=-5.804 CI95=[-11.12,-0.16]  perm_p=0.0258  wilcoxon_p=0.1108
+    • scz  |  REGULATION_OF_STEM_CELL_DIFFERENTIATION_GO_2000736
+        n=74  StoufferZ=-5.689 CI95=[-11.35,-0.07]  perm_p=0.0276  wilcoxon_p=0.1668
+    • scz  |  NEGATIVE_REGULATION_OF_WNT_SIGNALING_PATHWAY_GO_0030178
+        n=166  StoufferZ=-5.448 CI95=[-10.76,-0.24]  perm_p=0.0307  wilcoxon_p=0.06167  [family-wise FDR set]
+    • scz  |  REGULATION_OF_HEMATOPOIETIC_PROGENITOR_CELL_DIFFERENTIATION_
+        n=63  StoufferZ=-5.389 CI95=[-11.03,0.17]  perm_p=0.0366  wilcoxon_p=0.1683
+    • scz  |  WNT_SIGNALING_PATHWAY_PLANAR_CELL_POLARITY_PATHWAY_GO_006007
+        n=73  StoufferZ=-5.126 CI95=[-10.91,0.54]  perm_p=0.04739  wilcoxon_p=0.2318
+    • scz  |  NEGATIVE_REGULATION_OF_G2_M_TRANSITION_OF_MITOTIC_CELL_CYCLE
+        n=56  StoufferZ=-5.035 CI95=[-10.84,0.63]  perm_p=0.04909  wilcoxon_p=0.181
+
+================================================================================
+  [2] ROBUSTNESS: STOUFFER Z AFTER REMOVING DRIVERS
+================================================================================
+  90 focus set×disease combinations evaluated.
+  (Z_full → after dropping sign-flip / |Z|>8 / all-influential genes)
+
+    • scz | POSITIVE_REGULATION_OF_ENDOPEPTIDASE_ACTIVITY_GO_001  (n=25)
+        Z_full=-8.695 | drop-signflip=-8.695 (-0) | drop|Z|>8=-4.406 (-1) | drop-influential=-4.406 (-1)
+    • scz | ANTIGEN_PROCESSING_AND_PRESENTATION_OF_EXOGENOUS_PEP  (n=63)
+        Z_full=-8.610 | drop-signflip=-8.610 (-0) | drop|Z|>8=-6.280 (-2) | drop-influential=-8.610 (-0)
+    • dm_cvs | REGULATION_OF_CELL_CYCLE_PROCESS_GO_0010564  (n=86)
+        Z_full=8.546 | drop-signflip=8.546 (-0) | drop|Z|>8=1.266 (-8) | drop-influential=3.311 (-2)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • scz | ANTIGEN_PROCESSING_AND_PRESENTATION_OF_EXOGENOUS_PEP  (n=68)
+        Z_full=-7.926 | drop-signflip=-7.926 (-0) | drop|Z|>8=-5.671 (-2) | drop-influential=-7.926 (-0)
+    • dm_cvs | REGULATION_OF_HEMATOPOIETIC_PROGENITOR_CELL_DIFFEREN  (n=59)
+        Z_full=-7.768 | drop-signflip=-7.768 (-0) | drop|Z|>8=-1.375 (-7) | drop-influential=-7.976 (-2)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | FATTY_ACID_OXIDATION_GO_0019395  (n=49)
+        Z_full=-7.527 | drop-signflip=-7.527 (-0) | drop|Z|>8=-5.044 (-2) | drop-influential=-7.527 (-0)
+    • scz | NON_CANONICAL_WNT_SIGNALING_PATHWAY_GO_0035567  (n=106)
+        Z_full=-7.482 | drop-signflip=-7.482 (-0) | drop|Z|>8=-5.723 (-2) | drop-influential=-7.482 (-0)
+    • dm_cvs | CYTOKINE_MEDIATED_SIGNALING_PATHWAY_GO_0019221  (n=462)
+        Z_full=-7.418 | drop-signflip=-7.418 (-0) | drop|Z|>8=-3.781 (-25) | drop-influential=-7.418 (-0)
+    • scz | REGULATION_OF_CELL_CYCLE_PHASE_TRANSITION_GO_1901987  (n=80)
+        Z_full=-7.317 | drop-signflip=-7.317 (-0) | drop|Z|>8=-6.277 (-1) | drop-influential=-7.317 (-0)
+    • scz | REGULATION_OF_ENDOPEPTIDASE_ACTIVITY_GO_0052548  (n=56)
+        Z_full=-7.202 | drop-signflip=-7.202 (-0) | drop|Z|>8=-5.988 (-1) | drop-influential=-7.202 (-0)
+    • scz | ANAPHASE_PROMOTING_COMPLEX_DEPENDENT_CATABOLIC_PROCE  (n=69)
+        Z_full=-7.081 | drop-signflip=-7.081 (-0) | drop|Z|>8=-5.962 (-1) | drop-influential=-7.081 (-0)
+    • dm_cvs | REGULATION_OF_CELL_DIVISION_GO_0051302  (n=64)
+        Z_full=7.056 | drop-signflip=7.056 (-0) | drop|Z|>8=4.144 (-6) | drop-influential=5.235 (-3)
+    • scz | REGULATION_OF_KETONE_BIOSYNTHETIC_PROCESS_GO_0010566  (n=7)
+        Z_full=6.391 | drop-signflip=6.391 (-0) | drop|Z|>8=6.391 (-0) | drop-influential=4.523 (-1)
+    • dm_cvs | MITOTIC_SISTER_CHROMATID_SEGREGATION_GO_0000070  (n=77)
+        Z_full=-6.121 | drop-signflip=-6.121 (-0) | drop|Z|>8=-0.159 (-9) | drop-influential=-1.592 (-6)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • scz | NEGATIVE_REGULATION_OF_WNT_SIGNALING_PATHWAY_GO_0030  (n=166)
+        Z_full=-6.025 | drop-signflip=-6.025 (-0) | drop|Z|>8=-4.722 (-3) | drop-influential=-4.733 (-1)
+    • scz | PROTEIN_DNA_COMPLEX_ASSEMBLY_GO_0065004  (n=98)
+        Z_full=-5.874 | drop-signflip=-5.874 (-0) | drop|Z|>8=-3.949 (-2) | drop-influential=-5.874 (-0)
+    • scz | SCF_DEPENDENT_PROTEASOMAL_UBIQUITIN_DEPENDENT_PROTEI  (n=76)
+        Z_full=-5.743 | drop-signflip=-5.743 (-0) | drop|Z|>8=-4.667 (-1) | drop-influential=-5.743 (-0)
+    • dm_cvs | PROTEIN_UBIQUITINATION_GO_0016567  (n=396)
+        Z_full=5.665 | drop-signflip=5.665 (-0) | drop|Z|>8=2.740 (-24) | drop-influential=5.665 (-0)
+    • dm_cvs | REGULATION_OF_G1_S_TRANSITION_OF_MITOTIC_CELL_CYCLE_  (n=57)
+        Z_full=5.646 | drop-signflip=5.646 (-0) | drop|Z|>8=1.669 (-4) | drop-influential=1.669 (-4)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • scz | REGULATION_OF_STEM_CELL_DIFFERENTIATION_GO_2000736  (n=74)
+        Z_full=-5.597 | drop-signflip=-5.597 (-0) | drop|Z|>8=-3.549 (-2) | drop-influential=-5.597 (-0)
+    • scz | NEGATIVE_REGULATION_OF_CANONICAL_WNT_SIGNALING_PATHW  (n=141)
+        Z_full=-5.580 | drop-signflip=-5.580 (-0) | drop|Z|>8=-4.164 (-3) | drop-influential=-4.177 (-1)
+    • scz | REGULATION_OF_HEMATOPOIETIC_PROGENITOR_CELL_DIFFEREN  (n=63)
+        Z_full=-5.293 | drop-signflip=-5.293 (-0) | drop|Z|>8=-4.109 (-1) | drop-influential=-4.109 (-1)
+    • scz | REGULATION_OF_CANONICAL_WNT_SIGNALING_PATHWAY_GO_006  (n=219)
+        Z_full=-5.263 | drop-signflip=-5.263 (-0) | drop|Z|>8=-4.120 (-3) | drop-influential=-4.136 (-1)
+    • scz | PROTEIN_LOCALIZATION_TO_MEMBRANE_GO_0072657  (n=176)
+        Z_full=5.186 | drop-signflip=5.186 (-0) | drop|Z|>8=3.590 (-5) | drop-influential=6.318 (-1)
+    • scz | WNT_SIGNALING_PATHWAY_PLANAR_CELL_POLARITY_PATHWAY_G  (n=73)
+        Z_full=-5.053 | drop-signflip=-5.053 (-0) | drop|Z|>8=-3.950 (-1) | drop-influential=-3.950 (-1)
+    • dm_cvs | NON_CANONICAL_WNT_SIGNALING_PATHWAY_GO_0035567  (n=96)
+        Z_full=-4.991 | drop-signflip=-4.991 (-0) | drop|Z|>8=1.427 (-8) | drop-influential=-0.444 (-6)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***  [sign changed]
+    • scz | NEGATIVE_REGULATION_OF_G2_M_TRANSITION_OF_MITOTIC_CE  (n=56)
+        Z_full=-4.966 | drop-signflip=-4.966 (-0) | drop|Z|>8=-3.710 (-1) | drop-influential=-2.689 (-2)
+    • scz | CELLULAR_PROTEIN_MODIFICATION_PROCESS_GO_0006464  (n=892)
+        Z_full=4.738 | drop-signflip=4.738 (-0) | drop|Z|>8=3.019 (-20) | drop-influential=4.738 (-0)
+    • dm_cvs | PROTEIN_DNA_COMPLEX_ASSEMBLY_GO_0065004  (n=88)
+        Z_full=-4.729 | drop-signflip=-4.729 (-0) | drop|Z|>8=-0.546 (-6) | drop-influential=-1.518 (-5)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | POST_TRANSLATIONAL_PROTEIN_MODIFICATION_GO_0043687  (n=275)
+        Z_full=4.726 | drop-signflip=4.726 (-0) | drop|Z|>8=4.541 (-19) | drop-influential=2.514 (-4)
+    • dm_cvs | REGULATION_OF_MITOTIC_CELL_CYCLE_PHASE_TRANSITION_GO  (n=157)
+        Z_full=4.650 | drop-signflip=4.650 (-0) | drop|Z|>8=2.885 (-11) | drop-influential=3.519 (-4)
+    • scz | NEGATIVE_REGULATION_OF_MITOTIC_CELL_CYCLE_PHASE_TRAN  (n=77)
+        Z_full=-4.221 | drop-signflip=-4.221 (-0) | drop|Z|>8=-3.141 (-1) | drop-influential=-2.267 (-2)
+    • scz | CILIUM_ASSEMBLY_GO_0060271  (n=273)
+        Z_full=4.053 | drop-signflip=4.053 (-0) | drop|Z|>8=2.660 (-6) | drop-influential=3.205 (-1)
+    • scz | REGULATION_OF_CELLULAR_PROTEIN_LOCALIZATION_GO_19038  (n=42)
+        Z_full=-3.989 | drop-signflip=-3.989 (-0) | drop|Z|>8=-0.847 (-2) | drop-influential=-2.073 (-5)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | ANTIGEN_RECEPTOR_MEDIATED_SIGNALING_PATHWAY_GO_00508  (n=142)
+        Z_full=-3.921 | drop-signflip=-3.921 (-0) | drop|Z|>8=-2.116 (-16) | drop-influential=-3.620 (-12)
+    • scz | NEUTROPHIL_MEDIATED_IMMUNITY_GO_0002446  (n=435)
+        Z_full=-3.862 | drop-signflip=-3.862 (-0) | drop|Z|>8=-2.885 (-4) | drop-influential=-3.862 (-0)
+    • scz | REGULATION_OF_CELL_DIVISION_GO_0051302  (n=70)
+        Z_full=-3.739 | drop-signflip=-3.739 (-0) | drop|Z|>8=-2.671 (-1) | drop-influential=-1.744 (-2)
+    • dm_cvs | TRANSCRIPTION_BY_RNA_POLYMERASE_II_GO_0006366  (n=231)
+        Z_full=-3.708 | drop-signflip=-3.708 (-0) | drop|Z|>8=-3.783 (-15) | drop-influential=-4.446 (-4)
+    • scz | PLASMA_MEMBRANE_BOUNDED_CELL_PROJECTION_ASSEMBLY_GO_  (n=241)
+        Z_full=3.590 | drop-signflip=3.590 (-0) | drop|Z|>8=2.078 (-4) | drop-influential=2.688 (-1)
+    • scz | NEUTROPHIL_ACTIVATION_INVOLVED_IN_IMMUNE_RESPONSE_GO  (n=433)
+        Z_full=-3.584 | drop-signflip=-3.584 (-0) | drop|Z|>8=-2.603 (-4) | drop-influential=-3.584 (-0)
+    • dm_cvs | NEGATIVE_REGULATION_OF_EXTRINSIC_APOPTOTIC_SIGNALING  (n=57)
+        Z_full=-3.580 | drop-signflip=-3.580 (-0) | drop|Z|>8=-0.538 (-2) | drop-influential=-1.222 (-5)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • scz | RETINOID_METABOLIC_PROCESS_GO_0001523  (n=75)
+        Z_full=3.573 | drop-signflip=3.573 (-0) | drop|Z|>8=1.125 (-1) | drop-influential=1.125 (-1)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | MITOTIC_SPINDLE_ORGANIZATION_GO_0007052  (n=134)
+        Z_full=-3.552 | drop-signflip=-3.552 (-0) | drop|Z|>8=1.600 (-10) | drop-influential=1.600 (-10)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***  [sign changed]
+    • scz | PROTEIN_LOCALIZATION_TO_PLASMA_MEMBRANE_GO_0072659  (n=123)
+        Z_full=3.496 | drop-signflip=3.496 (-0) | drop|Z|>8=3.269 (-3) | drop-influential=3.269 (-3)
+    • dm_cvs | PLASMA_MEMBRANE_BOUNDED_CELL_PROJECTION_ASSEMBLY_GO_  (n=214)
+        Z_full=-3.469 | drop-signflip=-3.469 (-0) | drop|Z|>8=-3.344 (-7) | drop-influential=-4.483 (-3)
+    • scz | MITOTIC_SISTER_CHROMATID_SEGREGATION_GO_0000070  (n=86)
+        Z_full=-3.426 | drop-signflip=-3.426 (-0) | drop|Z|>8=-2.541 (-1) | drop-influential=-1.134 (-5)
+    • dm_cvs | UBIQUITIN_DEPENDENT_PROTEIN_CATABOLIC_PROCESS_GO_000  (n=288)
+        Z_full=3.374 | drop-signflip=3.374 (-0) | drop|Z|>8=4.314 (-17) | drop-influential=3.319 (-7)
+    • scz | NEUTROPHIL_DEGRANULATION_GO_0043312  (n=429)
+        Z_full=-3.367 | drop-signflip=-3.367 (-0) | drop|Z|>8=-2.381 (-4) | drop-influential=-3.367 (-0)
+    • dm_cvs | WNT_SIGNALING_PATHWAY_PLANAR_CELL_POLARITY_PATHWAY_G  (n=69)
+        Z_full=-3.074 | drop-signflip=-3.074 (-0) | drop|Z|>8=2.114 (-6) | drop-influential=-1.066 (-12)  [sign changed]
+    • dm_cvs | REGULATION_OF_STEM_CELL_DIFFERENTIATION_GO_2000736  (n=66)
+        Z_full=-3.002 | drop-signflip=-3.002 (-0) | drop|Z|>8=-1.294 (-8) | drop-influential=-1.817 (-15)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • scz | FATTY_ACID_OXIDATION_GO_0019395  (n=52)
+        Z_full=2.859 | drop-signflip=2.859 (-0) | drop|Z|>8=2.859 (-0) | drop-influential=0.326 (-6)
+    • dm_cvs | REGULATION_OF_ENDOPEPTIDASE_ACTIVITY_GO_0052548  (n=49)
+        Z_full=2.804 | drop-signflip=2.804 (-0) | drop|Z|>8=4.556 (-1) | drop-influential=2.803 (-8)
+    • dm_cvs | REGULATION_OF_CELLULAR_PROTEIN_LOCALIZATION_GO_19038  (n=36)
+        Z_full=2.635 | drop-signflip=2.635 (-0) | drop|Z|>8=1.073 (-1) | drop-influential=-0.138 (-7)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | PROTEIN_MODIFICATION_BY_SMALL_PROTEIN_CONJUGATION_GO  (n=309)
+        Z_full=2.604 | drop-signflip=2.604 (-0) | drop|Z|>8=-1.912 (-12) | drop-influential=-0.379 (-9)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***  [sign changed]
+    • dm_cvs | REGULATION_OF_CELL_CYCLE_PHASE_TRANSITION_GO_1901987  (n=73)
+        Z_full=2.536 | drop-signflip=2.536 (-0) | drop|Z|>8=1.557 (-9) | drop-influential=1.113 (-17)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • scz | REGULATION_OF_MITOTIC_CELL_CYCLE_PHASE_TRANSITION_GO  (n=169)
+        Z_full=-2.516 | drop-signflip=-2.516 (-0) | drop|Z|>8=-1.778 (-1) | drop-influential=-1.272 (-8)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • scz | TRANSCRIPTION_BY_RNA_POLYMERASE_II_GO_0006366  (n=274)
+        Z_full=2.402 | drop-signflip=2.402 (-0) | drop|Z|>8=0.651 (-2) | drop-influential=1.134 (-3)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | RETINOID_METABOLIC_PROCESS_GO_0001523  (n=69)
+        Z_full=2.381 | drop-signflip=2.381 (-0) | drop|Z|>8=1.101 (-1) | drop-influential=-0.375 (-12)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | NEGATIVE_REGULATION_OF_G2_M_TRANSITION_OF_MITOTIC_CE  (n=52)
+        Z_full=-2.184 | drop-signflip=0.070 (-1) | drop|Z|>8=0.825 (-6) | drop-influential=-0.418 (-20)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***  [sign changed]
+    • dm_cvs | POSITIVE_REGULATION_OF_ENDOPEPTIDASE_ACTIVITY_GO_001  (n=24)
+        Z_full=-2.164 | drop-signflip=0.280 (-1) | drop|Z|>8=0.280 (-1) | drop-influential=-1.233 (-12)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***  [sign changed]
+    • scz | CYTOKINE_MEDIATED_SIGNALING_PATHWAY_GO_0019221  (n=505)
+        Z_full=-2.151 | drop-signflip=-2.151 (-0) | drop|Z|>8=-0.911 (-7) | drop-influential=-1.715 (-3)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • scz | UBIQUITIN_DEPENDENT_PROTEIN_CATABOLIC_PROCESS_GO_000  (n=312)
+        Z_full=-2.037 | drop-signflip=-2.037 (-0) | drop|Z|>8=-0.101 (-6) | drop-influential=0.779 (-10)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | MAPK_CASCADE_GO_0000165  (n=226)
+        Z_full=2.032 | drop-signflip=-0.102 (-1) | drop|Z|>8=1.932 (-22) | drop-influential=2.934 (-30)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | ANTIGEN_PROCESSING_AND_PRESENTATION_OF_EXOGENOUS_PEP  (n=64)
+        Z_full=-2.013 | drop-signflip=0.018 (-1) | drop|Z|>8=-1.718 (-10) | drop-influential=-0.824 (-23)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | ANTIGEN_PROCESSING_AND_PRESENTATION_OF_EXOGENOUS_PEP  (n=59)
+        Z_full=-1.998 | drop-signflip=0.118 (-1) | drop|Z|>8=-1.696 (-10) | drop-influential=-0.733 (-25)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • scz | MITOTIC_SPINDLE_ORGANIZATION_GO_0007052  (n=140)
+        Z_full=1.876 | drop-signflip=1.876 (-0) | drop|Z|>8=2.867 (-3) | drop-influential=2.455 (-12)
+    • dm_cvs | NEGATIVE_REGULATION_OF_MITOTIC_CELL_CYCLE_PHASE_TRAN  (n=72)
+        Z_full=1.805 | drop-signflip=-4.010 (-2) | drop|Z|>8=-0.764 (-10) | drop-influential=0.473 (-30)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***  [sign changed]
+    • scz | ANTIGEN_RECEPTOR_MEDIATED_SIGNALING_PATHWAY_GO_00508  (n=151)
+        Z_full=-1.766 | drop-signflip=-1.766 (-0) | drop|Z|>8=-1.165 (-4) | drop-influential=0.798 (-18)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • scz | PROTEIN_UBIQUITINATION_GO_0016567  (n=442)
+        Z_full=-1.514 | drop-signflip=-1.514 (-0) | drop|Z|>8=-1.448 (-8) | drop-influential=-0.389 (-23)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • scz | PROTEIN_MODIFICATION_BY_SMALL_PROTEIN_CONJUGATION_GO  (n=347)
+        Z_full=-1.452 | drop-signflip=-1.452 (-0) | drop|Z|>8=-1.410 (-6) | drop-influential=-1.757 (-21)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • scz | POST_TRANSLATIONAL_PROTEIN_MODIFICATION_GO_0043687  (n=296)
+        Z_full=-1.270 | drop-signflip=-1.270 (-0) | drop|Z|>8=-1.651 (-7) | drop-influential=1.141 (-31)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • scz | REGULATION_OF_G1_S_TRANSITION_OF_MITOTIC_CELL_CYCLE_  (n=61)
+        Z_full=-1.034 | drop-signflip=-1.034 (-0) | drop|Z|>8=-1.034 (-0) | drop-influential=-0.726 (-16)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | CILIUM_ASSEMBLY_GO_0060271  (n=251)
+        Z_full=-1.023 | drop-signflip=-1.023 (-0) | drop|Z|>8=-2.517 (-7) | drop-influential=-1.956 (-66)
+    • scz | REGULATION_OF_CELL_CYCLE_PROCESS_GO_0010564  (n=91)
+        Z_full=-1.004 | drop-signflip=-1.004 (-0) | drop|Z|>8=-2.531 (-3) | drop-influential=-1.174 (-37)
+    • dm_cvs | CELLULAR_PROTEIN_MODIFICATION_PROCESS_GO_0006464  (n=817)
+        Z_full=0.988 | drop-signflip=0.988 (-0) | drop|Z|>8=1.296 (-39) | drop-influential=-0.792 (-80)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | NEUTROPHIL_ACTIVATION_INVOLVED_IN_IMMUNE_RESPONSE_GO  (n=405)
+        Z_full=-0.873 | drop-signflip=1.078 (-2) | drop|Z|>8=1.739 (-17) | drop-influential=-0.748 (-74)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***  [sign changed]
+    • dm_cvs | REGULATION_OF_CANONICAL_WNT_SIGNALING_PATHWAY_GO_006  (n=199)
+        Z_full=0.824 | drop-signflip=-2.505 (-3) | drop|Z|>8=5.141 (-14) | drop-influential=-0.097 (-81)
+    • dm_cvs | SCF_DEPENDENT_PROTEASOMAL_UBIQUITIN_DEPENDENT_PROTEI  (n=71)
+        Z_full=-0.815 | drop-signflip=7.945 (-6) | drop|Z|>8=1.806 (-10) | drop-influential=-2.316 (-40)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***  [sign changed]
+    • scz | NEGATIVE_REGULATION_OF_EXTRINSIC_APOPTOTIC_SIGNALING  (n=63)
+        Z_full=-0.768 | drop-signflip=0.095 (-1) | drop|Z|>8=-0.768 (-0) | drop-influential=0.338 (-19)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | NEUTROPHIL_MEDIATED_IMMUNITY_GO_0002446  (n=407)
+        Z_full=0.724 | drop-signflip=-0.108 (-1) | drop|Z|>8=2.422 (-17) | drop-influential=0.525 (-101)
+    • dm_cvs | REGULATION_OF_KETONE_BIOSYNTHETIC_PROCESS_GO_0010566  (n=6)
+        Z_full=0.692 | drop-signflip=-1.900 (-2) | drop|Z|>8=0.692 (-0) | drop-influential=NA (-5)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | NEGATIVE_REGULATION_OF_CANONICAL_WNT_SIGNALING_PATHW  (n=127)
+        Z_full=-0.665 | drop-signflip=7.610 (-8) | drop|Z|>8=4.615 (-10) | drop-influential=-0.651 (-71)  [sign changed]
+    • dm_cvs | NEGATIVE_REGULATION_OF_WNT_SIGNALING_PATHWAY_GO_0030  (n=149)
+        Z_full=-0.577 | drop-signflip=8.578 (-10) | drop|Z|>8=5.189 (-11) | drop-influential=-0.201 (-87)  [sign changed]
+    • dm_cvs | ANAPHASE_PROMOTING_COMPLEX_DEPENDENT_CATABOLIC_PROCE  (n=62)
+        Z_full=0.505 | drop-signflip=-7.279 (-7) | drop|Z|>8=1.981 (-7) | drop-influential=-0.556 (-48)
+    • scz | PROTEIN_POLYUBIQUITINATION_GO_0000209  (n=278)
+        Z_full=-0.404 | drop-signflip=4.250 (-9) | drop|Z|>8=-0.230 (-5) | drop-influential=0.023 (-150)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • scz | MAPK_CASCADE_GO_0000165  (n=252)
+        Z_full=0.382 | drop-signflip=-2.100 (-4) | drop|Z|>8=0.228 (-6) | drop-influential=0.276 (-134)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | NEUTROPHIL_DEGRANULATION_GO_0043312  (n=401)
+        Z_full=-0.303 | drop-signflip=7.053 (-14) | drop|Z|>8=1.892 (-16) | drop-influential=-0.290 (-217)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***  [sign changed]
+    • dm_cvs | PROTEIN_LOCALIZATION_TO_PLASMA_MEMBRANE_GO_0072659  (n=114)
+        Z_full=0.191 | drop-signflip=-10.446 (-22) | drop|Z|>8=2.966 (-3) | drop-influential=-0.310 (-99)
+    • dm_cvs | PROTEIN_POLYUBIQUITINATION_GO_0000209  (n=257)
+        Z_full=-0.112 | drop-signflip=20.811 (-60) | drop|Z|>8=-1.571 (-20) | drop-influential=0.241 (-217)  *** FRAGILE: lost |Z|>1.96 after |Z|>8 removal ***
+    • dm_cvs | PROTEIN_LOCALIZATION_TO_MEMBRANE_GO_0072657  (n=161)
+        Z_full=-0.062 | drop-signflip=19.201 (-54) | drop|Z|>8=3.443 (-6) | drop-influential=0.008 (-147)  [sign changed]
+
+  SUMMARY: 24 claim result(s) are driven by |Z|>8.0 outliers (collapse below |Z|=1.96 once removed).
+      - dm_cvs / REGULATION_OF_CELL_CYCLE_PROCESS_GO_0010564
+      - dm_cvs / REGULATION_OF_HEMATOPOIETIC_PROGENITOR_CELL_DIFFERENTIA
+      - dm_cvs / MITOTIC_SISTER_CHROMATID_SEGREGATION_GO_0000070
+      - dm_cvs / REGULATION_OF_G1_S_TRANSITION_OF_MITOTIC_CELL_CYCLE_GO_
+      - dm_cvs / NON_CANONICAL_WNT_SIGNALING_PATHWAY_GO_0035567
+      - dm_cvs / PROTEIN_DNA_COMPLEX_ASSEMBLY_GO_0065004
+      - scz / REGULATION_OF_CELLULAR_PROTEIN_LOCALIZATION_GO_1903827
+      - dm_cvs / NEGATIVE_REGULATION_OF_EXTRINSIC_APOPTOTIC_SIGNALING_PA
+      - scz / RETINOID_METABOLIC_PROCESS_GO_0001523
+      - dm_cvs / MITOTIC_SPINDLE_ORGANIZATION_GO_0007052
+      - dm_cvs / REGULATION_OF_STEM_CELL_DIFFERENTIATION_GO_2000736
+      - dm_cvs / REGULATION_OF_CELLULAR_PROTEIN_LOCALIZATION_GO_1903827
+      - dm_cvs / PROTEIN_MODIFICATION_BY_SMALL_PROTEIN_CONJUGATION_GO_00
+      - dm_cvs / REGULATION_OF_CELL_CYCLE_PHASE_TRANSITION_GO_1901987
+      - scz / REGULATION_OF_MITOTIC_CELL_CYCLE_PHASE_TRANSITION_GO_19
+      - scz / TRANSCRIPTION_BY_RNA_POLYMERASE_II_GO_0006366
+      - dm_cvs / RETINOID_METABOLIC_PROCESS_GO_0001523
+      - dm_cvs / NEGATIVE_REGULATION_OF_G2_M_TRANSITION_OF_MITOTIC_CELL_
+      - dm_cvs / POSITIVE_REGULATION_OF_ENDOPEPTIDASE_ACTIVITY_GO_001095
+      - scz / CYTOKINE_MEDIATED_SIGNALING_PATHWAY_GO_0019221
+      - scz / UBIQUITIN_DEPENDENT_PROTEIN_CATABOLIC_PROCESS_GO_000651
+      - dm_cvs / MAPK_CASCADE_GO_0000165
+      - dm_cvs / ANTIGEN_PROCESSING_AND_PRESENTATION_OF_EXOGENOUS_PEPTID
+      - dm_cvs / ANTIGEN_PROCESSING_AND_PRESENTATION_OF_EXOGENOUS_PEPTID
+
+================================================================================
+  [3] CROSS-TRAIT DISCORDANT GENES (both |Z|>1.96, opposite sign)
+================================================================================
+  1553 strong discordant gene entries across 147 gene set(s).
+  Top 30 by |Z gap| (dm_cvs vs scz):
+
+    • UBE2D3          dm_cvs=+20.95  scz=-10.73  |gap|=31.68  [set: UBIQUITIN_DEPENDENT_PROTEIN_CATABOLIC_PR]
+    • UBE2D3          dm_cvs=+20.95  scz=-10.73  |gap|=31.68  [set: PROTEASOMAL_PROTEIN_CATABOLIC_PROCESS_GO]
+    • UBE2D3          dm_cvs=+20.95  scz=-10.73  |gap|=31.68  [set: PROTEIN_UBIQUITINATION_GO_0016567]
+    • UBE2D3          dm_cvs=+20.95  scz=-10.73  |gap|=31.68  [set: PROTEIN_POLYUBIQUITINATION_GO_0000209]
+    • UBE2D3          dm_cvs=+20.95  scz=-10.73  |gap|=31.68  [set: PROTEIN_MODIFICATION_BY_SMALL_PROTEIN_CO]
+    • UBE2D3          dm_cvs=+20.95  scz=-10.73  |gap|=31.68  [set: PROTEASOME_MEDIATED_UBIQUITIN_DEPENDENT_]
+    • UBE2D3          dm_cvs=+20.95  scz=-10.73  |gap|=31.68  [set: CELLULAR_PROTEIN_MODIFICATION_PROCESS_GO]
+    • NOTCH4          dm_cvs=-11.70  scz=+19.64  |gap|=31.35  [set: TRANSCRIPTION_BY_RNA_POLYMERASE_II_GO_00]
+    • INO80E          dm_cvs=-16.02  scz=+12.81  |gap|=28.83  [set: PROTEIN_DEUBIQUITINATION_GO_0016579]
+    • INO80E          dm_cvs=-16.02  scz=+12.81  |gap|=28.83  [set: PROTEIN_MODIFICATION_BY_SMALL_PROTEIN_RE]
+    • MAPK3           dm_cvs=-15.02  scz=+12.60  |gap|=27.61  [set: CYTOKINE_MEDIATED_SIGNALING_PATHWAY_GO_0]
+    • MAPK3           dm_cvs=-15.02  scz=+12.60  |gap|=27.61  [set: REGULATION_OF_VESICLE_MEDIATED_TRANSPORT]
+    • MAPK3           dm_cvs=-15.02  scz=+12.60  |gap|=27.61  [set: FC_RECEPTOR_SIGNALING_PATHWAY_GO_0038093]
+    • MAPK3           dm_cvs=-15.02  scz=+12.60  |gap|=27.61  [set: FC_EPSILON_RECEPTOR_SIGNALING_PATHWAY_GO]
+    • MAPK3           dm_cvs=-15.02  scz=+12.60  |gap|=27.61  [set: INTERLEUKIN_1_MEDIATED_SIGNALING_PATHWAY]
+    • MAPK3           dm_cvs=-15.02  scz=+12.60  |gap|=27.61  [set: CELLULAR_PROTEIN_MODIFICATION_PROCESS_GO]
+    • MAPK3           dm_cvs=-15.02  scz=+12.60  |gap|=27.61  [set: MAPK_CASCADE_GO_0000165]
+    • MAPK3           dm_cvs=-15.02  scz=+12.60  |gap|=27.61  [set: CELLULAR_RESPONSE_TO_INTERLEUKIN_1_GO_00]
+    • CENPE           dm_cvs=-17.87  scz=+7.76  |gap|=25.63  [set: MITOTIC_SPINDLE_ORGANIZATION_GO_0007052]
+    • CENPE           dm_cvs=-17.87  scz=+7.76  |gap|=25.63  [set: MITOTIC_SISTER_CHROMATID_SEGREGATION_GO_]
+    • CENPE           dm_cvs=-17.87  scz=+7.76  |gap|=25.63  [set: ORGANELLE_ASSEMBLY_GO_0070925]
+    • CENPE           dm_cvs=-17.87  scz=+7.76  |gap|=25.63  [set: REGULATION_OF_MITOTIC_CELL_CYCLE_PHASE_T]
+    • CENPE           dm_cvs=-17.87  scz=+7.76  |gap|=25.63  [set: MITOTIC_METAPHASE_PLATE_CONGRESSION_GO_0]
+    • RNF5            dm_cvs=-5.73  scz=+19.66  |gap|=25.39  [set: PROTEIN_POLYUBIQUITINATION_GO_0000209]
+    • RNF5            dm_cvs=-5.73  scz=+19.66  |gap|=25.39  [set: PROTEASOME_MEDIATED_UBIQUITIN_DEPENDENT_]
+    • RNF5            dm_cvs=-5.73  scz=+19.66  |gap|=25.39  [set: UBIQUITIN_DEPENDENT_PROTEIN_CATABOLIC_PR]
+    • RNF5            dm_cvs=-5.73  scz=+19.66  |gap|=25.39  [set: PROTEASOMAL_PROTEIN_CATABOLIC_PROCESS_GO]
+    • AGER            dm_cvs=+2.41  scz=-21.89  |gap|=24.30  [set: NEURON_PROJECTION_DEVELOPMENT_GO_0031175]
+    • AGER            dm_cvs=+2.41  scz=-21.89  |gap|=24.30  [set: PLASMA_MEMBRANE_BOUNDED_CELL_PROJECTION_]
+    • AGER            dm_cvs=+2.41  scz=-21.89  |gap|=24.30  [set: NEURON_DEVELOPMENT_GO_0048666]
+
+  Gene sets with highest discordant fraction (of both-strong genes):
+      1.00   ESTABLISHMENT_OF_MELANOSOME_LOCALIZATION_GO_0032401
+      1.00   REGULATION_OF_CATION_TRANSMEMBRANE_TRANSPORT_GO_1904062
+      1.00   NEUROTRANSMITTER_RECEPTOR_TRANSPORT_TO_POSTSYNAPTIC_MEMBRANE
+      1.00   PIGMENT_GRANULE_TRANSPORT_GO_0051904
+      1.00   NEUROTRANSMITTER_RECEPTOR_TRANSPORT_ENDOSOME_TO_PLASMA_MEMBR
+      1.00   NEUROTRANSMITTER_RECEPTOR_TRANSPORT_ENDOSOME_TO_POSTSYNAPTIC
+      1.00   MELANOSOME_TRANSPORT_GO_0032402
+      1.00   FATTY_ACID_ALPHA_OXIDATION_GO_0001561
+      1.00   PROTEIN_IMPORT_INTO_PEROXISOME_MATRIX_GO_0016558
+      1.00   REGULATION_OF_KETONE_BIOSYNTHETIC_PROCESS_GO_0010566
+      1.00   REGULATION_OF_POTASSIUM_ION_TRANSPORT_GO_0043266
+      0.83   CYTOPLASMIC_MICROTUBULE_ORGANIZATION_GO_0031122
+
+================================================================================
+  [4] RECURRENT DRIVER GENES (hijack many GO sets — NOT independent)
+================================================================================
+  dm_cvs — top recurrent influential genes:
+      PSMD6          in  57 sets | medZ=+16.79 | max|Δ%|=934.6 | sign-flips=5
+      PSMD4          in  54 sets | medZ=-16.25 | max|Δ%|=903.6 | sign-flips=16
+      PSMA1          in  48 sets | medZ=-11.31 | max|Δ%|=629.1 | sign-flips=11
+      PSMC4          in  48 sets | medZ=-10.59 | max|Δ%|=589.0 | sign-flips=11
+      PSMB7          in  45 sets | medZ=-8.88 | max|Δ%|=494.1 | sign-flips=12
+      PSMD11         in  37 sets | medZ=+5.86 | max|Δ%|=326.2 | sign-flips=2
+      PSMB6          in  34 sets | medZ=+5.81 | max|Δ%|=323.6 | sign-flips=2
+      PSMB8          in  27 sets | medZ=-4.93 | max|Δ%|=274.2 | sign-flips=2
+      PSMD5          in  24 sets | medZ=-4.68 | max|Δ%|=260.4 | sign-flips=2
+      PSMA6          in  22 sets | medZ=+3.52 | max|Δ%|=196.1 | sign-flips=1
+      PSMB10         in  22 sets | medZ=+3.47 | max|Δ%|=193.0 | sign-flips=1
+      PSMC1          in  22 sets | medZ=-3.97 | max|Δ%|=220.5 | sign-flips=1
+      PSMC3          in  22 sets | medZ=+3.20 | max|Δ%|=178.3 | sign-flips=0
+      BTRC           in  20 sets | medZ=+11.03 | max|Δ%|=613.9 | sign-flips=0
+      CUL1           in  20 sets | medZ=+8.89 | max|Δ%|=495.0 | sign-flips=0
+
+  scz — top recurrent influential genes:
+      PSMB10         in  40 sets | medZ=-9.65 | max|Δ%|=225.0 | sign-flips=2
+      PSMB2          in  32 sets | medZ=-7.75 | max|Δ%|=180.5 | sign-flips=2
+      PSMB4          in  27 sets | medZ=+7.03 | max|Δ%|=164.8 | sign-flips=1
+      PSMD11         in  25 sets | medZ=-6.76 | max|Δ%|=157.5 | sign-flips=2
+      RAB11A         in  16 sets | medZ=-0.86 | max|Δ%|=1001.6 | sign-flips=2
+      PSMA6          in  15 sets | medZ=-5.75 | max|Δ%|=133.7 | sign-flips=1
+      CUL3           in  11 sets | medZ=-7.08 | max|Δ%|=227.5 | sign-flips=1
+      PSMB1          in  11 sets | medZ=-4.88 | max|Δ%|=113.3 | sign-flips=1
+      PSMB5          in  11 sets | medZ=-4.74 | max|Δ%|=110.1 | sign-flips=1
+      PSMC3          in  10 sets | medZ=-4.38 | max|Δ%|=101.7 | sign-flips=1
+      GPC1           in   8 sets | medZ=-5.50 | max|Δ%|=191.9 | sign-flips=1
+      PSMB9          in   8 sets | medZ=-4.05 | max|Δ%|=94.0 | sign-flips=0
+      PSMC5          in   8 sets | medZ=+3.06 | max|Δ%|=72.1 | sign-flips=0
+      PSMD8          in   8 sets | medZ=+3.82 | max|Δ%|=89.8 | sign-flips=0
+      SLC25A17       in   8 sets | medZ=+7.25 | max|Δ%|=532.6 | sign-flips=0
+
+  Genes that are influential in BOTH diseases (cross-trait scaffolding):
+      PSMD11          dm_cvs=37  scz=25
+      PSMB10          dm_cvs=22  scz=40
+      PSMB4           dm_cvs=18  scz=27
+      PSMA6           dm_cvs=22  scz=15
+      RAB11A          dm_cvs=14  scz=16
+      PSMB5           dm_cvs=20  scz=11
+      PSMC3           dm_cvs=22  scz=10
+      PSMB9           dm_cvs=13  scz=8
+      PSMD8           dm_cvs=14  scz=8
+      PSMB8           dm_cvs=27  scz=7
+      BTRC            dm_cvs=20  scz=7
+      MAPK3           dm_cvs=7  scz=7
+      UBE2D3          dm_cvs=6  scz=6
+      GPC1            dm_cvs=5  scz=8
+      RAB27A          dm_cvs=7  scz=5
+      EP300           dm_cvs=6  scz=5
+      AKT1            dm_cvs=5  scz=7
+      ARL3            dm_cvs=4  scz=4
+      FGFR1           dm_cvs=4  scz=4
+      HYAL2           dm_cvs=4  scz=4
+      PPIL2           dm_cvs=4  scz=4
+      PSMD4           dm_cvs=54  scz=4
+      PSMD9           dm_cvs=18  scz=4
+      CDC25A          dm_cvs=4  scz=4
+      BLOC1S3         dm_cvs=4  scz=5
+
+  INTERPRETATION: GO terms sharing these genes are statistically non-independent;
+  do not count each affected GO set as a separate finding.
+
+================================================================================
+  [5] FAMILY-WISE FDR MODULE MAP
+================================================================================
+  55 test rows survive family-wise FDR<0.05 across 34 gene set(s).
+
+  By statistical class (what kind of signal):
+    - enrichment              :    6 rows | 5 unique set(s)
+    - mean_shift              :   19 rows | 3 unique set(s)
+    - other                   :    1 rows | 1 unique set(s)
+    - profile_similarity      :    3 rows | 3 unique set(s)
+    - variance_heterogeneity  :   26 rows | 26 unique set(s)
+
+  Strongest set per module (lowest family-wise FDR):
+      CELLULAR_PROTEIN_MODIFICATION_PROCESS_GO_0006464    variance_heterogeneity=0
+      CYTOKINE_MEDIATED_SIGNALING_PATHWAY_GO_0019221      variance_heterogeneity=0.00038
+      TRANSCRIPTION_BY_RNA_POLYMERASE_II_GO_0006366       variance_heterogeneity=0.000551
+      MAPK_CASCADE_GO_0000165                             variance_heterogeneity=0.00186
+      REGULATION_OF_CANONICAL_WNT_SIGNALING_PATHWAY_GO_0  variance_heterogeneity=0.0034
+      REGULATION_OF_CELLULAR_PROTEIN_LOCALIZATION_GO_190  other=0.0037
+      MITOTIC_SPINDLE_ORGANIZATION_GO_0007052             variance_heterogeneity=0.00464
+      REGULATION_OF_MITOTIC_CELL_CYCLE_PHASE_TRANSITION_  variance_heterogeneity=0.00809
+      CILIUM_ASSEMBLY_GO_0060271                          mean_shift=0.0419; variance_heterogeneity=0.0106
+      NEGATIVE_REGULATION_OF_WNT_SIGNALING_PATHWAY_GO_00  variance_heterogeneity=0.0123
+      PROTEIN_UBIQUITINATION_GO_0016567                   variance_heterogeneity=0.0159
+      NEUTROPHIL_ACTIVATION_INVOLVED_IN_IMMUNE_RESPONSE_  variance_heterogeneity=0.0169
+      NEUTROPHIL_DEGRANULATION_GO_0043312                 variance_heterogeneity=0.018
+      NEUTROPHIL_MEDIATED_IMMUNITY_GO_0002446             variance_heterogeneity=0.0182
+      NEGATIVE_REGULATION_OF_MITOTIC_CELL_CYCLE_PHASE_TR  variance_heterogeneity=0.0193
+      PROTEIN_LOCALIZATION_TO_MEMBRANE_GO_0072657         variance_heterogeneity=0.0204
+      PLASMA_MEMBRANE_BOUNDED_CELL_PROJECTION_ASSEMBLY_G  variance_heterogeneity=0.0208
+      ANTIGEN_PROCESSING_AND_PRESENTATION_OF_EXOGENOUS_P  enrichment=0.0209
+      REGULATION_OF_G1_S_TRANSITION_OF_MITOTIC_CELL_CYCL  variance_heterogeneity=0.0209
+      ANTIGEN_RECEPTOR_MEDIATED_SIGNALING_PATHWAY_GO_005  variance_heterogeneity=0.0211
+      PROTEIN_MODIFICATION_BY_SMALL_PROTEIN_CONJUGATION_  profile_similarity=0.0212
+      POST_TRANSLATIONAL_PROTEIN_MODIFICATION_GO_0043687  variance_heterogeneity=0.022
+      PROTEIN_LOCALIZATION_TO_PLASMA_MEMBRANE_GO_0072659  variance_heterogeneity=0.0248
+      RETINOID_METABOLIC_PROCESS_GO_0001523               variance_heterogeneity=0.0266
+      REGULATION_OF_CELL_DIVISION_GO_0051302              variance_heterogeneity=0.0277
+      UBIQUITIN_DEPENDENT_PROTEIN_CATABOLIC_PROCESS_GO_0  profile_similarity=0.0288
+      NEGATIVE_REGULATION_OF_EXTRINSIC_APOPTOTIC_SIGNALI  variance_heterogeneity=0.0313
+      MITOTIC_SISTER_CHROMATID_SEGREGATION_GO_0000070     profile_similarity=0.0327; variance_heterogeneity=0.0425
+      NEGATIVE_REGULATION_OF_CANONICAL_WNT_SIGNALING_PAT  variance_heterogeneity=0.034
+      REGULATION_OF_ENDOPEPTIDASE_ACTIVITY_GO_0052548     enrichment=0.0382; mean_shift=0.0382
+
+  READING: 'variance_heterogeneity' = same GO label but different gene identity
+  between diseases (Levene). 'enrichment' = genuine per-disease signal.
+  'mean_shift' = directional difference. 'profile_similarity' = shared profile.
+
+================================================================================
+  [6] TISSUE-OF-EFFECT (focus sets)
+================================================================================
+  Per-tissue Stouffer Z matrix: 88 rows × 6 tissues (see downstream_tissue_heatmap.png).
+  Strongest |Z| tissue per focus set×disease:
+      ANAPHASE_PROMOTING_COMPLEX_DEPENDENT_C | dm_cvs     → Pancreas_spredixcan      Z=-3.82
+      ANAPHASE_PROMOTING_COMPLEX_DEPENDENT_C | scz        → Pancreas_spredixcan      Z=-4.79
+      ANTIGEN_PROCESSING_AND_PRESENTATION_OF | dm_cvs     → Pancreas_spredixcan      Z=-7.14
+      ANTIGEN_PROCESSING_AND_PRESENTATION_OF | scz        → Liver_spredixcan         Z=-6.33
+      ANTIGEN_RECEPTOR_MEDIATED_SIGNALING_PA | dm_cvs     → Pancreas_spredixcan      Z=-6.19
+      ANTIGEN_RECEPTOR_MEDIATED_SIGNALING_PA | scz        → Adipose_Visceral_Omentum Z=-2.05
+      CELLULAR_PROTEIN_MODIFICATION_PROCESS_ | dm_cvs     → Muscle_Skeletal_spredixc Z=-5.36
+      CELLULAR_PROTEIN_MODIFICATION_PROCESS_ | scz        → Liver_spredixcan         Z=+3.04
+      CILIUM_ASSEMBLY_GO_0060271 | dm_cvs                 → Adipose_Subcutaneous_spr Z=-2.40
+      CILIUM_ASSEMBLY_GO_0060271 | scz                    → Adipose_Visceral_Omentum Z=+2.45
+      CYTOKINE_MEDIATED_SIGNALING_PATHWAY_GO | dm_cvs     → Pancreas_spredixcan      Z=-4.86
+      CYTOKINE_MEDIATED_SIGNALING_PATHWAY_GO | scz        → Adipose_Visceral_Omentum Z=-2.41
+      FATTY_ACID_OXIDATION_GO_0019395 | dm_cvs            → Whole_Blood_spredixcan   Z=-5.29
+      FATTY_ACID_OXIDATION_GO_0019395 | scz               → Adipose_Visceral_Omentum Z=+2.73
+      MAPK_CASCADE_GO_0000165 | dm_cvs                    → Adipose_Subcutaneous_spr Z=+2.58
+      MAPK_CASCADE_GO_0000165 | scz                       → Adipose_Subcutaneous_spr Z=-3.03
+      MITOTIC_SISTER_CHROMATID_SEGREGATION_G | dm_cvs     → Adipose_Visceral_Omentum Z=-5.76
+      MITOTIC_SISTER_CHROMATID_SEGREGATION_G | scz        → Adipose_Subcutaneous_spr Z=-3.08
+      MITOTIC_SPINDLE_ORGANIZATION_GO_000705 | dm_cvs     → Pancreas_spredixcan      Z=-5.27
+      MITOTIC_SPINDLE_ORGANIZATION_GO_000705 | scz        → Adipose_Visceral_Omentum Z=+2.47
+      NEGATIVE_REGULATION_OF_CANONICAL_WNT_S | dm_cvs     → Pancreas_spredixcan      Z=-7.40
+      NEGATIVE_REGULATION_OF_CANONICAL_WNT_S | scz        → Pancreas_spredixcan      Z=-4.80
+      NEGATIVE_REGULATION_OF_EXTRINSIC_APOPT | dm_cvs     → Adipose_Subcutaneous_spr Z=-3.35
+      NEGATIVE_REGULATION_OF_EXTRINSIC_APOPT | scz        → Pancreas_spredixcan      Z=-2.08
+      NEGATIVE_REGULATION_OF_G2_M_TRANSITION | dm_cvs     → Pancreas_spredixcan      Z=-5.32
+      NEGATIVE_REGULATION_OF_G2_M_TRANSITION | scz        → Pancreas_spredixcan      Z=-3.74
+      NEGATIVE_REGULATION_OF_MITOTIC_CELL_CY | dm_cvs     → Pancreas_spredixcan      Z=-5.04
+      NEGATIVE_REGULATION_OF_MITOTIC_CELL_CY | scz        → Adipose_Subcutaneous_spr Z=-3.28
+      NEGATIVE_REGULATION_OF_WNT_SIGNALING_P | dm_cvs     → Pancreas_spredixcan      Z=-6.58
+      NEGATIVE_REGULATION_OF_WNT_SIGNALING_P | scz        → Pancreas_spredixcan      Z=-4.65
+      NEUTROPHIL_ACTIVATION_INVOLVED_IN_IMMU | dm_cvs     → Muscle_Skeletal_spredixc Z=-3.66
+      NEUTROPHIL_ACTIVATION_INVOLVED_IN_IMMU | scz        → Adipose_Visceral_Omentum Z=-2.32
+      NEUTROPHIL_DEGRANULATION_GO_0043312 | dm_cvs        → Muscle_Skeletal_spredixc Z=-3.62
+      NEUTROPHIL_DEGRANULATION_GO_0043312 | scz           → Liver_spredixcan         Z=-2.31
+      NEUTROPHIL_MEDIATED_IMMUNITY_GO_000244 | dm_cvs     → Muscle_Skeletal_spredixc Z=-3.25
+      NEUTROPHIL_MEDIATED_IMMUNITY_GO_000244 | scz        → Adipose_Visceral_Omentum Z=-2.57
+      NON_CANONICAL_WNT_SIGNALING_PATHWAY_GO | dm_cvs     → Pancreas_spredixcan      Z=-8.78
+      NON_CANONICAL_WNT_SIGNALING_PATHWAY_GO | scz        → Pancreas_spredixcan      Z=-4.56
+      PLASMA_MEMBRANE_BOUNDED_CELL_PROJECTIO | dm_cvs     → Adipose_Subcutaneous_spr Z=-4.53
+      PLASMA_MEMBRANE_BOUNDED_CELL_PROJECTIO | scz        → Whole_Blood_spredixcan   Z=+2.12
+      POSITIVE_REGULATION_OF_ENDOPEPTIDASE_A | dm_cvs     → Pancreas_spredixcan      Z=-2.03
+      POSITIVE_REGULATION_OF_ENDOPEPTIDASE_A | scz        → Adipose_Subcutaneous_spr Z=-7.49
+      POST_TRANSLATIONAL_PROTEIN_MODIFICATIO | dm_cvs     → Whole_Blood_spredixcan   Z=+5.07
+      POST_TRANSLATIONAL_PROTEIN_MODIFICATIO | scz        → Adipose_Visceral_Omentum Z=-2.15
+      PROTEIN_DNA_COMPLEX_ASSEMBLY_GO_006500 | dm_cvs     → Pancreas_spredixcan      Z=-6.77
+      PROTEIN_DNA_COMPLEX_ASSEMBLY_GO_006500 | scz        → Adipose_Subcutaneous_spr Z=-4.48
+      PROTEIN_LOCALIZATION_TO_MEMBRANE_GO_00 | dm_cvs     → Muscle_Skeletal_spredixc Z=-4.27
+      PROTEIN_LOCALIZATION_TO_MEMBRANE_GO_00 | scz        → Liver_spredixcan         Z=+4.06
+      PROTEIN_LOCALIZATION_TO_PLASMA_MEMBRAN | dm_cvs     → Pancreas_spredixcan      Z=-3.33
+      PROTEIN_LOCALIZATION_TO_PLASMA_MEMBRAN | scz        → Liver_spredixcan         Z=+4.19
+      PROTEIN_MODIFICATION_BY_SMALL_PROTEIN_ | dm_cvs     → Liver_spredixcan         Z=+2.33
+      PROTEIN_MODIFICATION_BY_SMALL_PROTEIN_ | scz        → Adipose_Subcutaneous_spr Z=-2.39
+      PROTEIN_POLYUBIQUITINATION_GO_0000209 | dm_cvs      → Muscle_Skeletal_spredixc Z=-5.72
+      PROTEIN_POLYUBIQUITINATION_GO_0000209 | scz         → Adipose_Subcutaneous_spr Z=-2.47
+      PROTEIN_UBIQUITINATION_GO_0016567 | dm_cvs          → Liver_spredixcan         Z=+4.52
+      PROTEIN_UBIQUITINATION_GO_0016567 | scz             → Adipose_Subcutaneous_spr Z=-3.16
+      REGULATION_OF_CANONICAL_WNT_SIGNALING_ | dm_cvs     → Pancreas_spredixcan      Z=-5.08
+      REGULATION_OF_CANONICAL_WNT_SIGNALING_ | scz        → Pancreas_spredixcan      Z=-4.41
+      REGULATION_OF_CELLULAR_PROTEIN_LOCALIZ | dm_cvs     → Muscle_Skeletal_spredixc Z=+2.68
+      REGULATION_OF_CELLULAR_PROTEIN_LOCALIZ | scz        → Pancreas_spredixcan      Z=-3.11
+      REGULATION_OF_CELL_CYCLE_PHASE_TRANSIT | dm_cvs     → Adipose_Subcutaneous_spr Z=+3.66
+      REGULATION_OF_CELL_CYCLE_PHASE_TRANSIT | scz        → Adipose_Subcutaneous_spr Z=-4.04
+      REGULATION_OF_CELL_CYCLE_PROCESS_GO_00 | dm_cvs     → Muscle_Skeletal_spredixc Z=+5.51
+      REGULATION_OF_CELL_CYCLE_PROCESS_GO_00 | scz        → Adipose_Subcutaneous_spr Z=-1.70
+      REGULATION_OF_CELL_DIVISION_GO_0051302 | dm_cvs     → Liver_spredixcan         Z=+6.75
+      REGULATION_OF_CELL_DIVISION_GO_0051302 | scz        → Adipose_Subcutaneous_spr Z=-3.21
+      REGULATION_OF_ENDOPEPTIDASE_ACTIVITY_G | dm_cvs     → Adipose_Subcutaneous_spr Z=+2.53
+      REGULATION_OF_ENDOPEPTIDASE_ACTIVITY_G | scz        → Adipose_Subcutaneous_spr Z=-7.43
+      REGULATION_OF_G1_S_TRANSITION_OF_MITOT | dm_cvs     → Adipose_Subcutaneous_spr Z=+4.39
+      REGULATION_OF_G1_S_TRANSITION_OF_MITOT | scz        → Adipose_Visceral_Omentum Z=-1.35
+      REGULATION_OF_HEMATOPOIETIC_PROGENITOR | dm_cvs     → Pancreas_spredixcan      Z=-9.72
+      REGULATION_OF_HEMATOPOIETIC_PROGENITOR | scz        → Pancreas_spredixcan      Z=-3.89
+      REGULATION_OF_KETONE_BIOSYNTHETIC_PROC | dm_cvs     → Muscle_Skeletal_spredixc Z=+0.93
+      REGULATION_OF_KETONE_BIOSYNTHETIC_PROC | scz        → Adipose_Visceral_Omentum Z=+4.27
+      REGULATION_OF_MITOTIC_CELL_CYCLE_PHASE | dm_cvs     → Adipose_Subcutaneous_spr Z=+5.32
+      REGULATION_OF_MITOTIC_CELL_CYCLE_PHASE | scz        → Adipose_Subcutaneous_spr Z=-2.74
+      REGULATION_OF_STEM_CELL_DIFFERENTIATIO | dm_cvs     → Pancreas_spredixcan      Z=-7.84
+      REGULATION_OF_STEM_CELL_DIFFERENTIATIO | scz        → Pancreas_spredixcan      Z=-3.91
+      RETINOID_METABOLIC_PROCESS_GO_0001523 | dm_cvs      → Adipose_Visceral_Omentum Z=+2.96
+      RETINOID_METABOLIC_PROCESS_GO_0001523 | scz         → Whole_Blood_spredixcan   Z=+2.23
+      SCF_DEPENDENT_PROTEASOMAL_UBIQUITIN_DE | dm_cvs     → Pancreas_spredixcan      Z=-4.13
+      SCF_DEPENDENT_PROTEASOMAL_UBIQUITIN_DE | scz        → Adipose_Visceral_Omentum Z=-4.12
+      TRANSCRIPTION_BY_RNA_POLYMERASE_II_GO_ | dm_cvs     → Pancreas_spredixcan      Z=-3.34
+      TRANSCRIPTION_BY_RNA_POLYMERASE_II_GO_ | scz        → Liver_spredixcan         Z=+2.26
+      UBIQUITIN_DEPENDENT_PROTEIN_CATABOLIC_ | dm_cvs     → Adipose_Subcutaneous_spr Z=+4.95
+      UBIQUITIN_DEPENDENT_PROTEIN_CATABOLIC_ | scz        → Pancreas_spredixcan      Z=-2.99
+      WNT_SIGNALING_PATHWAY_PLANAR_CELL_POLA | dm_cvs     → Pancreas_spredixcan      Z=-6.67
+      WNT_SIGNALING_PATHWAY_PLANAR_CELL_POLA | scz        → Pancreas_spredixcan      Z=-4.10
+
+================================================================================
+  [7] CROSS-DISEASE CONCORDANCE (pairwise, focus sets)
+================================================================================
+  45 disease-pair comparison(s) examined; 1 with notable concordance signal.
+
+    • REGULATION_OF_CELLULAR_PROTEIN_LOCALIZATION_GO_1  dm_cvs vs scz (n_paired=34)
+        sign_rate=0.176  CCC=-0.037  τ=-0.273  Cohen_d(paired)=0.24
+        → sign_rate=0.18 (p=0.000195)
+
+  NOTE: low concordance + significant Levene = shared GO label, different genes
+  (label-sharing, not biological profile-sharing).
+
+================================================================================
+  GRAND TALLY
+================================================================================
+    Permutation-sig meta enrichments            : 21
+    Family-wise FDR sets                        : 34
+    Fragile claim results (driver-dependent)    : 24
+    Discordant strong gene entries              : 1553
+    Recurrent driver genes (both diseases)      : 600
+    Family-wise FDR test rows                   : 55
+
+================================================================================
+  OUTPUT FILES (in /content/088HvI_downstream):
+    downstream_claim_table.csv
+    downstream_stouffer_without_drivers.csv
+    downstream_discordant_genes.csv
+    downstream_discordance_fraction_by_set.csv
+    downstream_recurrent_drivers.csv
+    downstream_drivers_in_both_diseases.csv
+    downstream_fw_modules.csv
+    downstream_tissue_matrix.csv
+    downstream_tissue_heatmap.png
+    downstream_concordance_scatter.png
+    downstream_summary.txt
+================================================================================
